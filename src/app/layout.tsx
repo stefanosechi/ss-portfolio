@@ -1,11 +1,13 @@
-import { Navbar } from "@/components";
+import { FlareCursor, Navbar } from "@/components";
+import BuymeCoffeeButton from "@/components/utils/buyme-coffee-button";
 import Providers from "@/components/utils/providers";
-import TopButton from "@/components/utils/top-button";
 import { base, heading } from "@/constants/fonts";
 import { generateMetadata } from "@/lib/metadata";
 import { cn } from "@/lib/utils";
 import "@/styles/globals.css";
+import { ColorSchemeScript } from "@mantine/core";
 import "@mantine/core/styles.css";
+import Head from "./head";
 
 export const metadata = generateMetadata();
 
@@ -17,10 +19,10 @@ export default function RootLayout({
     return (
         <html lang="en" suppressHydrationWarning>
 
-            {/* <head>
+            <head>
                 <ColorSchemeScript />
                 <Head />
-            </head> */}
+            </head>
 
             <body className={cn(
                 "min-h-screen bg-background text-foreground antialiased font-heading relative",
@@ -30,7 +32,8 @@ export default function RootLayout({
                 <Providers>
                     <Navbar />
                     {children}
-                    <TopButton />
+                    <FlareCursor />
+                    <BuymeCoffeeButton />
                 </Providers>
             </body>
         </html>

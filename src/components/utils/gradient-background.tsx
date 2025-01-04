@@ -9,7 +9,7 @@ const GradientBackground = ({ children }: { children: React.ReactNode }) => {
 
             <div className="h-screen absolute w-full">
                 <AnimatedGrid
-                    numSquares={20}
+                    numSquares={15}
                     maxOpacity={0.1}
                     duration={6}
                     className="inset-x-0 h-3/5"

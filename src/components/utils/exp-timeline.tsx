@@ -12,7 +12,7 @@ export const TimeLine = ({ children }: { children: React.ReactNode }) => {
                 </h2>
             </div>
 
-            <div className="">
+            <div>
                 {children}
             </div>
 

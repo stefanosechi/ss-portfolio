@@ -91,7 +91,7 @@
 html,
 body {
   scroll-behavior: smooth;
-  /* cursor: none !important; */
+  cursor: none !important;
 }
 
 img,
@@ -100,7 +100,7 @@ image {
   pointer-events: none;
 }
 
-/* a,
+a,
 button,
 input,
 textarea,
@@ -108,7 +108,7 @@ select,
 label,
 option {
   cursor: none !important;
-} */
+}
 
 .flare {
   position: fixed;

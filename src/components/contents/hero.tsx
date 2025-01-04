@@ -6,6 +6,7 @@ import Image from "next/image";
 import Icons from '../ui/icons';
 import { NumberTicker } from "../ui/number-ticker";
 import { AnimationContainer } from "../utils/animation-container";
+import Link from "next/link";
 
 const Hero = () => {
     return (
@@ -137,15 +138,17 @@ const Hero = () => {
                         className="size-full object-cover"
                     />
                 </div>
-                <button className="relative py-3 text-[15px] tracking-wider font-medium overflow-hidden rounded-lg bg-[#3b82f6] text-white transition-all duration-300 group btn-primary flex items-center justify-center w-52 h-auto">
-                    <span className="relative z-10 font-medium font-heading">
-                        Let&apos;s Work Together
-                    </span>
-                    <span className="flex items-center justify-center scale-x-0 group-hover:scale-x-100 transition-all duration-300 size-0 group-hover:size-5 ml-1">
-                        <ChevronRightIcon className="size-5" />
-                    </span>
-                    <div className="absolute inset-y-0 -left-full w-full bg-gradient-to-r from-transparent via-white/20 to-transparent transition-all duration-500 ease-in-out group-hover:translate-x-[200%] group-hover:duration-1000"></div>
-                </button>
+                <Link href="#contact">
+                    <button className="relative py-3 text-[15px] tracking-wider font-medium overflow-hidden rounded-lg bg-[#3b82f6] text-white transition-all duration-300 group btn-primary flex items-center justify-center w-52 h-auto">
+                        <span className="relative z-10 font-medium font-heading">
+                            Let&apos;s Work Together
+                        </span>
+                        <span className="flex items-center justify-center scale-x-0 group-hover:scale-x-100 transition-all duration-300 size-0 group-hover:size-5 ml-1">
+                            <ChevronRightIcon className="size-5" />
+                        </span>
+                        <div className="absolute inset-y-0 -left-full w-full bg-gradient-to-r from-transparent via-white/20 to-transparent transition-all duration-500 ease-in-out group-hover:translate-x-[200%] group-hover:duration-1000"></div>
+                    </button>
+                </Link>
             </AnimationContainer>
 
             <AnimationContainer

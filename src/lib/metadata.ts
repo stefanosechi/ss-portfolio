@@ -28,7 +28,7 @@ export const generateMetadata = ({
             rel: "icon",
             sizes: "32x32",
             url: "/icons/favicon.png",
-            media: "(prefers-color-scheme: light)",
+            // media: "(prefers-color-scheme: light)",
         },
     ],
     noIndex = false,

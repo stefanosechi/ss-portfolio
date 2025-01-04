@@ -16,6 +16,7 @@ import { Input } from "../ui/input";
 import SendButton from "../ui/send-button";
 import { Textarea } from "../ui/textarea";
 import AnimationContainer from "../utils/animation-container";
+import BuymeCoffeeButton from "../utils/buyme-coffee-button";
 
 const Contact = () => {
 
@@ -63,7 +64,7 @@ const Contact = () => {
 
 
     return (
-        <div className="w-full relative pt-10 pb-40 z-40">
+        <div id="contact" className="w-full relative pt-10 pb-40 z-40">
             <AnimationContainer
                 animation="slide-up"
                 delay={0.1}
@@ -256,9 +257,8 @@ const Contact = () => {
                     </form>
                 </Form>
             </div>
-
-        </div >
+        </div>
     )
-}
+};
 
 export default Contact
