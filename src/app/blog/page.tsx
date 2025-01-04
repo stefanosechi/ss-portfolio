@@ -1,11 +1,12 @@
+import BlogSection from "@/components/sections/blog-section"
 import React from 'react'
 
-const BlogPage = () => {
+const Blogs = () => {
     return (
-        <div>
-            page
-        </div>
+        <main className="relative flex flex-col items-center justify-center px-0 md:px-4 pt-20 pb-40">
+            <BlogSection />
+        </main>
     )
-};
+}
 
-export default BlogPage
+export default Blogs

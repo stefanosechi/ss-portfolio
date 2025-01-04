@@ -82,6 +82,7 @@ export const getBlogs = async () => {
                         id
                         slug
                         title
+                        views
                         createdAt
                         publishedAt
                         description
@@ -114,6 +115,7 @@ export const getBlogDetails = async (slug: string) => {
             blog(where: { slug: $slug }) {
                 id
                 title
+                views
                 createdAt
                 publishedAt
                 description

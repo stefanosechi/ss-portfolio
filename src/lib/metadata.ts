@@ -21,13 +21,13 @@ interface MetadataProps {
 // TODO: Make a logo like attio
 export const generateMetadata = ({
     title = `${process.env.NEXT_PUBLIC_APP_NAME}`,
-    description = "Shreyas Sihasane is a software engineer and entrepreneur. He is the founder of TryScribe.",
+    description = "I'm a software engineer and entrepreneur.",
     image = "/images/og-image.png",
     icons = [
         {
             rel: "icon",
             sizes: "32x32",
-            url: "/icons/icon-dark.png",
+            url: "/icons/favicon.png",
             media: "(prefers-color-scheme: light)",
         },
     ],
@@ -46,7 +46,7 @@ export const generateMetadata = ({
     category,
     section,
 }: MetadataProps = {}): Metadata => {
-    const metadataBase = new URL(process.env.NEXT_PUBLIC_APP_URL || "https://shreyassihasane.com");
+    const metadataBase = new URL(process.env.NEXT_PUBLIC_APP_URL || "https://shreyas-sihasane.vercel.app");
 
     const imageUrl = image
         ? image.startsWith('http')

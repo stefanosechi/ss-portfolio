@@ -33,6 +33,7 @@ export interface CategoryProps {
 export interface BlogProps {
     slug: string;
     title: string;
+    views: number;
     description: string;
     content: any;
     categories: CategoryProps[];

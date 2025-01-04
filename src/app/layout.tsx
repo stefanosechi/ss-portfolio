@@ -1,9 +1,11 @@
 import { Navbar } from "@/components";
+import Providers from "@/components/utils/providers";
+import TopButton from "@/components/utils/top-button";
+import { base, heading } from "@/constants/fonts";
+import { generateMetadata } from "@/lib/metadata";
 import { cn } from "@/lib/utils";
 import "@/styles/globals.css";
 import "@mantine/core/styles.css";
-import { heading, base } from "@/lib/fonts";
-import { generateMetadata } from "@/utils/metadata";
 
 export const metadata = generateMetadata();
 
@@ -25,10 +27,11 @@ export default function RootLayout({
                 heading.variable,
                 base.variable,
             )}>
-
-                <Navbar />
-                {children}
-
+                <Providers>
+                    <Navbar />
+                    {children}
+                    <TopButton />
+                </Providers>
             </body>
         </html>
     );

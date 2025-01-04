@@ -1,8 +1,8 @@
-// "use client";
+"use client";
 
-import React from 'react';
+import { MantineProvider } from '@mantine/core';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { ColorSchemeScript, MantineProvider } from '@mantine/core';
+import React from 'react';
 import { Toaster } from '../ui/sonner';
 
 const Providers = ({
@@ -13,10 +13,16 @@ const Providers = ({
     const queryClient = new QueryClient();
 
     return (
-        <>
-            <Toaster />
-            {children}
-        </>
+        <MantineProvider>
+            <QueryClientProvider client={queryClient}>
+                <Toaster
+                    richColors
+                    theme="dark"
+                    position="top-center"
+                />
+                {children}
+            </QueryClientProvider>
+        </MantineProvider>
     )
 };
 

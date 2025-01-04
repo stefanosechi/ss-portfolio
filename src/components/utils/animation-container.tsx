@@ -58,7 +58,7 @@ export const AnimationContainer = ({
             className={cn(className)}
             initial={animations[animation].initial}
             whileInView={animations[animation].animate}
-            viewport={{ once }}
+            viewport={{ once: false }}
             transition={{
                 delay,
                 duration,

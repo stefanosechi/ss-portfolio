@@ -1,18 +1,16 @@
-"use client";
+"use client"
 
-import { LINKS } from '@/lib/links';
+import { LINKS } from '@/constants/links';
 import { cn } from '@/lib/utils';
-import { motion } from "framer-motion";
+import { FileTextIcon } from "lucide-react";
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import { useState } from 'react';
-import MobileNav from './mobile-navbar';
-import { FloatingDock } from "./ui/floating-dock";
-import { Dock, DockIcon } from "./ui/dock";
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "./ui/tooltip";
 import { buttonVariants } from "./ui/button";
+import { Dock, DockIcon } from "./ui/dock";
+import Icons from "./ui/icons";
 import { Separator } from "./ui/separator";
-import { GithubIcon } from "lucide-react";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "./ui/tooltip";
+
+const RESUME_LINK = process.env.NEXT_PUBLIC_RESUME_LINK;
 
 const DATA = {
     navbar: LINKS,
@@ -20,31 +18,30 @@ const DATA = {
         social: {
             github: {
                 name: "Github",
-                url: "https://github.com/joshua-s-dev",
-                icon: GithubIcon,
+                url: "https://github.com/Shreyas-29",
+                icon: Icons.github,
+            },
+            linkedin: {
+                name: "LinkedIn",
+                url: "https://linkedin.com/in/shreyas-sihasane-441b95238/",
+                icon: Icons.linkedin,
+            },
+            resume: {
+                name: "Resume",
+                url: RESUME_LINK as string,
+                icon: FileTextIcon,
             },
         },
     },
 };
 
 const Header = () => {
-
-    const pathname = usePathname();
-
-    const [activeLink, setActiveLink] = useState("Home");
-
-    const isBlogActive = pathname?.startsWith('/blog');
-
     return (
         <header className="z-[99999] flex justify-center items-center w-full fixed bottom-6 inset-x-0">
 
-            {/* <FloatingDock
-                mobileClassName="translate-y-20"
-                items={LINKS}
-            /> */}
-
+            <div className="w-full h-20 bg-gradient-to-t from-background absolute -bottom-8 inset-x-0 -z-10"></div>
             <TooltipProvider delayDuration={0}>
-                <Dock direction="middle">
+                <Dock direction="middle" className="relative">
                     {DATA.navbar.map((item) => (
                         <DockIcon key={item.name}>
                             <Tooltip>
@@ -66,39 +63,29 @@ const Header = () => {
                             </Tooltip>
                         </DockIcon>
                     ))}
-                    {/* <Separator orientation="vertical" className="h-full" />
+                    <Separator orientation="vertical" className="h-full" />
                     {Object.entries(DATA.contact.social).map(([name, social]) => (
                         <DockIcon key={name}>
                             <Tooltip>
                                 <TooltipTrigger asChild>
                                     <Link
-                                        href={social.url}
+                                        href={social.url!}
+                                        target="_blank"
                                         aria-label={social.name}
                                         className={cn(
                                             buttonVariants({ variant: "ghost", size: "icon" }),
-                                            "size-12 rounded-full",
+                                            "size-12 rounded-xl",
                                         )}
                                     >
                                         <social.icon className="size-4" />
                                     </Link>
                                 </TooltipTrigger>
                                 <TooltipContent>
-                                    <p>{name}</p>
+                                    <p>{social.name}</p>
                                 </TooltipContent>
                             </Tooltip>
                         </DockIcon>
-                    ))} */}
-                    {/* <Separator orientation="vertical" className="h-full py-2" /> */}
-                    {/* <DockIcon>
-                        <Tooltip>
-                            <TooltipTrigger asChild>
-                                <ModeToggle className="rounded-full" />
-                            </TooltipTrigger>
-                            <TooltipContent>
-                                <p>Theme</p>
-                            </TooltipContent>
-                        </Tooltip>
-                    </DockIcon> */}
+                    ))}
                 </Dock>
             </TooltipProvider>
 

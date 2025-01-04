@@ -1,6 +1,4 @@
 import Navbar from "./navbar";
-import Footer from "./footer";
-import MobileNavbar from "./mobile-navbar";
 
 import { Button } from "./ui/button";
 import { Tooltip } from "./ui/tooltip";
@@ -91,10 +89,8 @@ export {
     // Providers,
     Toast,
     Toaster,
-    Footer,
     MotionButton,
     // TopButton,
-    MobileNavbar,
     // AboutSection,
     // Heading,
     // ProjectSection,
