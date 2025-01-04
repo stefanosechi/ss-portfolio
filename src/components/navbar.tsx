@@ -11,8 +11,6 @@ import { Separator } from "./ui/separator";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "./ui/tooltip";
 import AnimationContainer from "./utils/animation-container";
 
-const RESUME_LINK = process.env.NEXT_PUBLIC_RESUME_LINK;
-
 const DATA = {
     navbar: LINKS,
     contact: {
@@ -29,7 +27,7 @@ const DATA = {
             },
             resume: {
                 name: "Resume",
-                url: RESUME_LINK as string,
+                url: "/me.pdf",
                 icon: FileTextIcon,
             },
         },

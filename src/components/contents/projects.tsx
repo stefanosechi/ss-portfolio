@@ -27,7 +27,6 @@ const Projects = () => {
     }, []);
 
     const data = projects?.map((item: any) => item.node);
-    console.log(data)
 
     return (
         <div className="w-full relative pb-20 py-10 z-40">
