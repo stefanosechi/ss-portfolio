@@ -1,15 +1,13 @@
 "use client";
 
-import React, { useEffect, useState } from 'react'
-import AnimationContainer from "../utils/animation-container";
-import { Button } from "../ui/button";
-import Link from "next/link";
-import { ArrowRightIcon, ExternalLinkIcon, GithubIcon, SquareArrowOutUpRightIcon } from "lucide-react";
-import Icons from "../ui/icons";
-import Image from "next/image";
-import { motion } from "framer-motion";
 import { getProjects } from "@/graphql";
 import { Project as ProjectProps } from '@/types';
+import { motion } from "framer-motion";
+import { ArrowRightIcon } from "lucide-react";
+import Link from "next/link";
+import { useEffect, useState } from 'react';
+import { Button } from "../ui/button";
+import AnimationContainer from "../utils/animation-container";
 import Project from "../utils/project";
 
 const Projects = () => {

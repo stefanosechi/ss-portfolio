@@ -6,6 +6,7 @@ import Projects from "../contents/projects";
 import Experience from "../contents/experience";
 import MySkills from "../contents/my-skills";
 import Contact from "../contents/contact";
+
 const HomeSection = () => {
     return (
         <div className="w-full flex flex-col items-center justify-center relative">
@@ -15,9 +16,9 @@ const HomeSection = () => {
             <Wrapper>
                 <AboutMe />
             </Wrapper>
-            {/* <Wrapper>
+            <Wrapper>
                 <Experience />
-            </Wrapper> */}
+            </Wrapper>
             <Wrapper>
                 <Projects />
             </Wrapper>

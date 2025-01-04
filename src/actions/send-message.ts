@@ -1,7 +1,7 @@
 "use server";
 
-import { GraphQLClient, gql } from 'graphql-request';
-import { z } from 'zod';
+import { GraphQLClient, gql } from "graphql-request";
+import { z } from "zod";
 
 const graphqlAPI = process.env.NEXT_PUBLIC_HYGRAPH_ENDPOINT!;
 

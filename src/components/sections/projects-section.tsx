@@ -7,7 +7,6 @@ const ProjectSection = () => {
     return (
         <Wrapper>
             <div className="flex flex-col items-start w-full mt-0 lg:mt-8">
-
                 <Heading title="Projects" />
 
                 <AnimationContainer className="w-full flex flex-col gap-5 mb-8">
@@ -17,7 +16,6 @@ const ProjectSection = () => {
                 </AnimationContainer>
 
                 <ProjectCards />
-
             </div>
         </Wrapper>
     )

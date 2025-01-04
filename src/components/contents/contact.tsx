@@ -16,7 +16,6 @@ import { Input } from "../ui/input";
 import SendButton from "../ui/send-button";
 import { Textarea } from "../ui/textarea";
 import AnimationContainer from "../utils/animation-container";
-import BuymeCoffeeButton from "../utils/buyme-coffee-button";
 
 const Contact = () => {
 
