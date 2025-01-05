@@ -36,7 +36,7 @@ const Icons = {
     youtube: (props: LucideProps) => (
         <svg {...props} width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M8 4.5L14 8L8 11.5V4.5Z" fill="currentColor" />
-            <path d="M10 1C19 1 19 1 19 8C19 15 19 15 10 15C1 15 1 15 1 8C1 1 1 1 10 1Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M10 1C19 1 19 1 19 8C19 15 19 15 10 15C1 15 1 15 1 8C1 1 1 1 10 1Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
     ),
     coffee: (props: LucideProps) => (
