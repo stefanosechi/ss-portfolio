@@ -16,14 +16,19 @@ const DATA = {
     contact: {
         social: {
             github: {
-                name: "Github",
+                name: "GitHub",
                 url: "https://github.com/Shreyas-29",
                 icon: Icons.github,
             },
             linkedin: {
                 name: "LinkedIn",
-                url: "https://linkedin.com/in/shreyas-sihasane-441b95238/",
+                url: "https://linkedin.com/in/shreyas-sihasane-441b95238",
                 icon: Icons.linkedin,
+            },
+            youtube: {
+                name: "YouTube",
+                url: "https://www.youtube.com/channel/UCrqsZYcbNVO2F8FS-xIIiZg",
+                icon: Icons.youtube,
             },
             resume: {
                 name: "Resume",
@@ -36,7 +41,7 @@ const DATA = {
 
 const Header = () => {
     return (
-        <header className="z-[999] flex justify-center items-center w-full fixed bottom-6 inset-x-0">
+        <header className="z-[999] flex justify-center items-center w-full fixed bottom-6 inset-x-0 cursor-none">
 
             <div className="w-full h-16 bg-gradient-to-t from-background absolute -bottom-8 inset-x-0 -z-10"></div>
 
