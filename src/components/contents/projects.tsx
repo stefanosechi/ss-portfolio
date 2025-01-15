@@ -9,6 +9,7 @@ import { useEffect, useState } from 'react';
 import { Button } from "../ui/button";
 import AnimationContainer from "../utils/animation-container";
 import Project from "../utils/project";
+import { MagicCard } from "../ui/magic-card";
 
 const Projects = () => {
 
@@ -56,13 +57,15 @@ const Projects = () => {
                         duration: 0.5,
                         delay: 0.5,
                     }}
-                    className="bg-violet-500/10 hidden lg:block -z-10 w-[30rem] left-[-5rem] bottom-[8rem] absolute h-[18rem] blur-[10rem] rounded-full"
+                    className="bg-blue-500/10 hidden lg:block -z-10 w-[30rem] left-[-5rem] bottom-[8rem] absolute h-[18rem] blur-[10rem] rounded-full"
                 />
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-5 w-full">
                     {data && data.slice(4, 8)?.map((project: ProjectProps, index) => (
                         <AnimationContainer key={project.title} delay={0.2 * index + 0.1}>
-                            <Project project={project} />
+                            <MagicCard className="p-2" gradientSize={100} gradientFrom="rgba(14,165,233,1)" gradientTo="rgba(59,130,246,1)">
+                                <Project project={project} />
+                            </MagicCard>
                         </AnimationContainer>
                     ))}
                 </div>

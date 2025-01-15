@@ -3,10 +3,10 @@
 import { motion } from "framer-motion";
 import { ChevronRightIcon, PlusIcon } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import Icons from '../ui/icons';
 import { NumberTicker } from "../ui/number-ticker";
 import { AnimationContainer } from "../utils/animation-container";
-import Link from "next/link";
 
 const Hero = () => {
     return (
@@ -68,7 +68,7 @@ const Hero = () => {
                 </div>
             </AnimationContainer>
 
-            <div className="text-balance relative z-20 mx-auto my-4 max-w-5xl text-center text-3xl md:text-4xl lg:text-5xl font-bold">
+            <div className="text-balance relative z-20 mx-auto my-4 max-w-5xl text-center text-4xl lg:text-5xl font-bold">
                 <AnimationContainer
                     delay={0.8}
                     animation="scale"
@@ -105,15 +105,11 @@ const Hero = () => {
                                 ) : word}
                                 &nbsp;
                                 {word === "that" && <br />}
-                                {/* {word === "digital" ? <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-blue-500">digital</span> : word}&nbsp; */}
                             </motion.span>
                         ))}
                 </motion.h2>
             </div>
 
-            {/* <h1 className="text-3xl md:text-4xl lg:text-5xl !leading-snug font-bold font-heading">
-                        Building Digital Solutions that Make a Difference
-                        </h1> */}
             <AnimationContainer
                 delay={0.6}
                 animation="slide-up"
@@ -157,7 +153,7 @@ const Hero = () => {
                 className="flex flex-col items-center justify-center my-32"
             >
                 <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 py-10 w-full lg:max-w-screen-md">
-                    {[25, 2, 15].map((value, index) => (
+                    {[25, 2, 8].map((value, index) => (
                         <AnimationContainer
                             key={index}
                             animation="scale"
@@ -179,7 +175,6 @@ const Hero = () => {
                                 {index === 0 && "Projects Completed"}
                                 {index === 1 && "Year of Experience"}
                                 {index === 2 && "Clients Served"}
-                                {/* {index === 3 && "Tech Stack"} */}
                             </p>
                         </AnimationContainer>
                     ))}

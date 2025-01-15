@@ -88,6 +88,10 @@
   background-color: hsl(var(--muted)) !important;
 }
 
+* {
+  cursor: none !important;
+}
+
 html,
 body {
   scroll-behavior: smooth;

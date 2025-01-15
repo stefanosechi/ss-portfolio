@@ -29,8 +29,8 @@ const Project = ({ project }: Props) => {
     };
 
     return (
-        <div className='bg-[#080809] border border-border/50 w-full hover:border-neutral-800 rounded-xl'>
-            <div className="flex flex-col p-4 lg:p-5">
+        <div className='w-full rounded-xl'>
+            <div className="flex flex-col p-2 lg:p-4">
                 <h4 className="text-lg font-medium">
                     {project.title}
                 </h4>

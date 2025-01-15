@@ -12,7 +12,8 @@ export const TimeLine = ({ children }: { children: React.ReactNode }) => {
                 </h2>
             </div>
 
-            <div>
+            <div className="relative">
+                <div className="absolute inset-0 size-20 rounded-full bg-blue-600 blur-[5rem] -top-0.5 -left-2"></div>
                 {children}
             </div>
 

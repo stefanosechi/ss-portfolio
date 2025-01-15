@@ -1,7 +1,7 @@
 export const SKILLS = [
     {
         title: 'Languages',
-        stack: ["HTML", "CSS", "JavaScript", "TypeScript", "Python", "C",],
+        stack: ["HTML", "CSS", "JavaScript", "TypeScript", "Python"],
     },
     {
         title: "Frontend Frameworks",
@@ -21,7 +21,7 @@ export const SKILLS = [
     },
     {
         title: "Databases",
-        stack: ["MongoDB", "Firebase", "Supabase", "PostgreSQL", "NeonDB"],
+        stack: ["MongoDB", "Firebase", "Supabase", "NeonDB"],
     },
     {
         title: "Software & Tools",

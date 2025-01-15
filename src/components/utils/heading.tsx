@@ -7,28 +7,33 @@ interface Props {
 }
 
 const Heading = ({ title }: Props) => {
-
-    const variants = {
-        hidden: { opacity: 0, y: -20 },
-        visible: { opacity: 1, y: 0 },
-    };
-
     return (
-        <motion.div
-            initial="hidden"
-            animate="visible"
-            variants={variants}
-            transition={{
-                type: "spring",
-                bounce: 0.25,
-                duration: 0.5,
-            }}
-            className="w-full mx-auto mb-8"
-        >
-            <h2 className="mb-8 text-4xl md:text-5xl tracking-wide text-white !leading-[1.5] text-center font-semibold capitalize">
-                {title}
-            </h2>
-        </motion.div>
+        <div className="w-full mx-auto mb-8">
+            <motion.h2 className="text-balance mb-8 text-4xl md:text-5xl tracking-wide text-white !leading-[1.5] text-center font-semibold capitalize">
+                {title.split(" ").map((word, index) => (
+                        <motion.span
+                            initial={{
+                                filter: "blur(10px)",
+                                opacity: 0,
+                                y: 10,
+                            }}
+                            animate={{
+                                filter: "blur(0px)",
+                                opacity: 1,
+                                y: 0,
+                            }}
+                            transition={{
+                                duration: 0.4,
+                                delay: index * 0.1,
+                            }}
+                            className="inline-block whitespace-nowrap"
+                            key={index}
+                        >
+                            {word}
+                        </motion.span>
+                    ))}
+            </motion.h2>
+        </div>
     )
 };
 

@@ -118,7 +118,7 @@ const Contact = () => {
                                                 type="text"
                                                 placeholder="Name"
                                                 autoComplete="off"
-                                                className="h-12 px-5 capitalize outline-none rounded-lg"
+                                                className="h-12 px-5 capitalize outline-none rounded-lg hover:border-blue-500"
                                             />
                                         </FormControl>
                                         <FormMessage>
@@ -156,7 +156,7 @@ const Contact = () => {
                                                     name="email"
                                                     placeholder="Email"
                                                     autoComplete="off"
-                                                    className="h-12 px-5 outline-none rounded-lg"
+                                                    className="h-12 px-5 outline-none rounded-lg hover:border-blue-500"
                                                 />
                                             </FormControl>
                                             <FormMessage>
@@ -187,7 +187,7 @@ const Contact = () => {
                                                     name="phone"
                                                     placeholder="Phone"
                                                     autoComplete="off"
-                                                    className="h-12 px-5 outline-none rounded-lg"
+                                                    className="h-12 px-5 outline-none rounded-lg hover:border-blue-500"
                                                 />
                                             </FormControl>
                                             <FormMessage>
@@ -223,7 +223,7 @@ const Contact = () => {
                                                 name="message"
                                                 placeholder="Message..."
                                                 autoComplete="off"
-                                                className="w-full p-5 outline-none resize-none rounded-lg"
+                                                className="w-full p-5 outline-none resize-none rounded-lg hover:border-blue-500"
                                             />
                                         </FormControl>
                                         <FormMessage>

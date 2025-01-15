@@ -45,7 +45,7 @@ const Header = () => {
 
             <div className="w-full h-16 bg-gradient-to-t from-background absolute -bottom-8 inset-x-0 -z-10"></div>
 
-            <AnimationContainer animation="slide-up" delay={1}>
+            <AnimationContainer animation="slide-up" delay={0.5}>
                 <TooltipProvider delayDuration={0}>
                     <Dock direction="middle" className="relative">
                         {DATA.navbar.map((item) => (
