@@ -1,10 +1,9 @@
-import React from 'react'
-import AnimationContainer from "../utils/animation-container";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, } from "@/components/ui/carousel";
-import { Card, CardContent } from "@/components/ui/card";
-import { Quote, StarHalfIcon, StarIcon, StarOffIcon } from "lucide-react";
 import { getReviews } from "@/actions";
+import { Card, CardContent } from "@/components/ui/card";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, } from "@/components/ui/carousel";
+import { StarIcon } from "lucide-react";
 import { MagicCard } from "../ui/magic-card";
+import AnimationContainer from "../utils/animation-container";
 
 type ReviewProps = {
     name: string;
@@ -68,9 +67,9 @@ const Review = ({ review }: { review: ReviewProps }) => {
             if (i < fullStars) {
                 stars.push(<StarIcon key={i} className="size-4 lg:size-5 fill-foreground text-foreground" />);
             } else if (i === fullStars && hasHalfStar) {
-                stars.push(<StarHalfIcon key={i} className="size-4 lg:size-5 fill-foreground text-foreground" />);
+                stars.push("");
             } else {
-                stars.push(<StarOffIcon key={i} className="size-4 lg:size-5 text-muted-foreground" />);
+                stars.push("");
             }
         }
         return stars;

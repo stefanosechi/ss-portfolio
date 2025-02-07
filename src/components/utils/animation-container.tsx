@@ -1,4 +1,3 @@
-// src/components/ui/animated-element.tsx
 "use client";
 
 import { motion, MotionProps } from "framer-motion";
