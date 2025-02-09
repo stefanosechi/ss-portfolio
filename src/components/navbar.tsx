@@ -35,6 +35,11 @@ const DATA = {
                 url: "/me.pdf",
                 icon: FileTextIcon,
             },
+            coffe: {
+                name: "Buy me a coffee",
+                url: "https://www.buymeacoffee.com/shreyas29",
+                icon: Icons.coffee,
+            },
         },
     },
 };
@@ -71,7 +76,7 @@ const Header = () => {
                         ))}
                         <Separator orientation="vertical" className="h-full" />
                         {Object.entries(DATA.contact.social).map(([name, social]) => (
-                            <DockIcon key={name}>
+                            <DockIcon key={name} className={social.name === "Buy me a coffee" ? "md:!hidden md:w-0" : undefined}>
                                 <Tooltip>
                                     <TooltipTrigger asChild>
                                         <Link

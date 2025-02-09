@@ -4,14 +4,14 @@ import { BlogProps } from '@/types';
 import React from 'react'
 
 interface Props {
-    params: {
+    params: Promise<{
         slug: string;
-    }
+    }>;
 }
 
-const Blog = async ({ params }: any) => {
+const Blog = async ({ params }: Props) => {
 
-    const { slug } = params;
+    const { slug } = await params;
 
     const data: BlogProps = await getBlogDetails(slug);
 

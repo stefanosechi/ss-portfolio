@@ -1,36 +1,70 @@
-<!-- This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Modern Portfolio - Personal Website
 
-## Getting Started
+<img src="https://github.com/user-attachments/assets/73170eb1-c851-440b-9361-0cd7b9de3252" alt="Portfolio Thumbnail">
 
-First, run the development server:
+## 🚀 Introduction
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+A modern, minimalist portfolio website built with the latest web technologies. Features a sleek design, smooth animations, and a comprehensive showcase of my projects, skills, and professional journey.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🔗 Live Demo
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Experience the live website here: [Portfolio](https://shreyas.vercel.app)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ✨ Features
 
-## Learn More
+- 📱 Responsive design for all devices
+- 🎨 Modern UI with dark mode
+- ⚡ Lightning-fast page loads
+- 📝 Dynamic blog section with markdown support
+- 🎯 Interactive project showcase
+- 🔄 Smooth page transitions
+- 📊 Real-time analytics integration
 
-To learn more about Next.js, take a look at the following resources:
+## 💻 Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Next.js 15** 
+- **TypeScript** 
+- **Tailwind CSS**
+- **Shadcn/ui**
+- **Framer Motion**
+- **GraphQL**
+- **Hygraph CMS**
+- **React Markdown**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🛠️ Installation
 
-## Deploy on Vercel
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/Shreyas-29/modern-portfolio.git
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. Install dependencies:
+    ```bash
+    pnpm install
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details. -->
+3. Create a `.env` file:
+    ```env
+    NEXT_PUBLIC_HYGRAPH_ENDPOINT=
+    HYGRAPH_TOKEN=
+    NEXT_PUBLIC_RESUME_LINK=
+    NEXT_PUBLIC_APP_NAME=
+    NEXT_PUBLIC_AUTHOR_NAME=
+    ```
+
+4. Run the development server:
+    ```bash
+    pnpm dev
+    ```
+
+5. Open [http://localhost:3000](http://localhost:3000)
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## ☕ Support
+
+If you like my work, consider buying me a coffee!
+
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/shreyas29)

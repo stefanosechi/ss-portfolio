@@ -88,7 +88,7 @@
   background-color: hsl(var(--muted)) !important;
 }
 
-* {
+/* * {
   cursor: none !important;
 }
 
@@ -96,7 +96,7 @@ html,
 body {
   scroll-behavior: smooth;
   cursor: none !important;
-}
+} */
 
 img,
 image {
@@ -111,7 +111,7 @@ textarea,
 select,
 label,
 option {
-  cursor: none !important;
+  /* cursor: none !important; */
 }
 
 .flare {

@@ -32,7 +32,7 @@ export default function RootLayout({
                 <Providers>
                     <Navbar />
                     {children}
-                    <FlareCursor />
+                    {/* <FlareCursor /> */}
                     <BuymeCoffeeButton />
                 </Providers>
             </body>
