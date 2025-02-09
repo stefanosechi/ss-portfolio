@@ -10,13 +10,11 @@ interface Props {
 }
 
 const Blog = async ({ params }: Props) => {
-
     const { slug } = await params;
-
     const data: BlogProps = await getBlogDetails(slug);
 
     return (
-        <main className="relative flex flex-col items-center justify-center px-0 md:px-4 py-20">
+        <main className="relative flex flex-col items-center justify-center w-full overflow-hidden">
             <BlogDetailSection data={data} />
         </main>
     )

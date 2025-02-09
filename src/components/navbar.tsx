@@ -38,7 +38,7 @@ const DATA = {
             coffe: {
                 name: "Buy me a coffee",
                 url: "https://www.buymeacoffee.com/shreyas29",
-                icon: Icons.coffee,
+                icon: Icons.coffeeInvert,
             },
         },
     },

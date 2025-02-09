@@ -37,7 +37,7 @@ const CodeBlock: FC<CodeBlockProps> = memo(({ language, value }) => {
     };
 
     return (
-        <div className="relative w-full font-sans rounded-lg bg-neutral-950 my-4">
+        <div className="relative w-full font-sans rounded-lg bg-neutral-950 my-4 scrollbar-hide">
             <div className="flex items-center justify-between w-full px-6 py-2 pr-4 rounded-t-lg bg-neutral-900 text-neutral-100 border-b border-border">
                 <span className="text-xs lowercase">
                     {language}
@@ -72,6 +72,7 @@ const CodeBlock: FC<CodeBlockProps> = memo(({ language, value }) => {
                     fontSize: '0.9rem',
                     lineHeight: '1.5',
                     fontFamily: 'JetBrains Mono, monospace',
+                    scrollbarWidth: 'none',
                 }}
                 lineNumberStyle={{
                     minWidth: '2.5em',
@@ -136,7 +137,7 @@ const MarkdownRenderer: FC<MarkdownRendererProps> = memo(({ blog }) => {
 
             if (inline || (!match && !content.includes('\n'))) {
                 return (
-                    <code className="bg-neutral-800 px-2 py-1 rounded-md font-mono text-sm" {...props}>
+                    <code className="bg-neutral-800 px-2 py-1 rounded-md font-mono text-sm scrollbar-hide" {...props}>
                         {content}
                     </code>
                 );
@@ -164,7 +165,7 @@ const MarkdownRenderer: FC<MarkdownRendererProps> = memo(({ blog }) => {
 
     return (
         <div className="mb-8 lg:py-8 lg:pb-16 w-full pb-12">
-            <div className="px-4 lg:px-0 text-neutral-200 prose prose-invert max-w-none">
+            <div className="px- lg:px-0 text-neutral-200 prose prose-invert max-w-none">
                 <ReactMarkdown
                     remarkPlugins={[remarkGfm]}
                     rehypePlugins={[rehypeRaw]}

@@ -69,6 +69,20 @@
   }
 }
 
+@layer components {
+  .prose-container {
+    @apply w-full max-w-full;
+  }
+
+  .prose-container pre {
+    @apply w-full max-w-full overflow-x-auto;
+  }
+
+  .prose-container code {
+    @apply whitespace-pre-wrap break-words;
+  }
+}
+
 ::selection {
   background-color: rgb(0, 112, 243);
   color: #ffffff;

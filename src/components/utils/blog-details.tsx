@@ -14,7 +14,7 @@ interface Props {
 
 const BlogDetails = ({ blog }: Props) => {
     return (
-        <div className="flex flex-col">
+        <div className="flex flex-col w-full">
             <AnimationContainer>
                 <Link href="/blog">
                     <Button
@@ -28,7 +28,7 @@ const BlogDetails = ({ blog }: Props) => {
             </AnimationContainer>
 
             <AnimationContainer className="flex flex-col items-start w-full mt-8">
-                <h2 className="text-xl lg:text-3xl font-bold text-neutral-50">
+                <h2 className="text-xl lg:text-3xl font-bold text-neutral-50 break-words">
                     {blog?.title}
                 </h2>
                 <p className="text-sm text-neutral-400 font-normal mt-4">
@@ -43,8 +43,10 @@ const BlogDetails = ({ blog }: Props) => {
                 <hr className="w-full border border-border h-px my-6" />
             </AnimationContainer>
 
-            <AnimationContainer className="w-full flex-col items-start">
-                <MarkdownRenderer blog={blog} />
+            <AnimationContainer className="w-full">
+                <div className="prose-container">
+                    <MarkdownRenderer blog={blog} />
+                </div>
             </AnimationContainer>
         </div>
     )
