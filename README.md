@@ -8,7 +8,8 @@ A modern, minimalist portfolio website built with the latest web technologies. F
 
 ## 🔗 Live Demo
 
-Experience the live website here: [Portfolio](https://shreyas.vercel.app)
+Experience the live website here: [Portfolio](https://shreyas-sihasane.vercel.app)
+Watch the video: [YouTube](https://youtu.be/2eIEPHwg9TA)
 
 ## ✨ Features
 
@@ -25,7 +26,7 @@ Experience the live website here: [Portfolio](https://shreyas.vercel.app)
 - **Next.js 15** 
 - **TypeScript** 
 - **Tailwind CSS**
-- **Shadcn/ui**
+- **Shadcn UI**
 - **Framer Motion**
 - **GraphQL**
 - **Hygraph CMS**
