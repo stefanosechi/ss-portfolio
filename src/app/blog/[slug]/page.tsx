@@ -10,7 +10,9 @@ interface Props {
 }
 
 const Blog = async ({ params }: Props) => {
+
     const { slug } = await params;
+    
     const data: BlogProps = await getBlogDetails(slug);
 
     return (

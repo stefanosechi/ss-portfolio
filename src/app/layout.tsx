@@ -1,5 +1,5 @@
-import { FlareCursor, Navbar } from "@/components";
-import BuymeCoffeeButton from "@/components/utils/buyme-coffee-button";
+import { Navbar } from "@/components";
+import { ClientProviders } from "@/components/utils/client-providers";
 import Providers from "@/components/utils/providers";
 import { base, heading } from "@/constants/fonts";
 import { generateMetadata } from "@/lib/metadata";
@@ -18,12 +18,15 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" suppressHydrationWarning>
-
             <head>
                 <ColorSchemeScript />
                 <Head />
+                <link
+                    rel="preload"
+                    href="/images/me.png"
+                    as="image"
+                />
             </head>
-
             <body className={cn(
                 "min-h-screen bg-background text-foreground antialiased font-heading relative",
                 heading.variable,
@@ -32,10 +35,9 @@ export default function RootLayout({
                 <Providers>
                     <Navbar />
                     {children}
-                    {/* <FlareCursor /> */}
-                    <BuymeCoffeeButton />
+                    <ClientProviders />
                 </Providers>
             </body>
         </html>
     );
-};
+}
