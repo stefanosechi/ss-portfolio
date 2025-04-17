@@ -6,10 +6,7 @@
 
 A modern, minimalist portfolio website built with the latest web technologies. Features a sleek design, smooth animations, and a comprehensive showcase of my projects, skills, and professional journey.
 
-## 🔗 Live Demo
 
-Experience the live website here: [Portfolio](https://shreyas-sihasane.vercel.app)
-Watch the video: [YouTube](https://youtu.be/2eIEPHwg9TA)
 
 ## ✨ Features
 
@@ -31,38 +28,6 @@ Watch the video: [YouTube](https://youtu.be/2eIEPHwg9TA)
 - **GraphQL**
 - **Hygraph CMS**
 - **React Markdown**
-
-## 🛠️ Installation
-
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/Shreyas-29/modern-portfolio.git
-    ```
-
-2. Install dependencies:
-    ```bash
-    pnpm install
-    ```
-
-3. Create a `.env` file:
-    ```env
-    NEXT_PUBLIC_HYGRAPH_ENDPOINT=
-    HYGRAPH_TOKEN=
-    NEXT_PUBLIC_RESUME_LINK=
-    NEXT_PUBLIC_APP_NAME=
-    NEXT_PUBLIC_AUTHOR_NAME=
-    ```
-
-4. Run the development server:
-    ```bash
-    pnpm dev
-    ```
-
-5. Open [http://localhost:3000](http://localhost:3000)
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## ☕ Support
 
