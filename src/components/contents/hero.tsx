@@ -46,7 +46,7 @@ const Hero = () => {
                 </div>
                 <div className="flex flex-col gap-2 flex-shrink-0">
                     <p className="text-sm font-medium text-foreground/70">
-                        Shreyas Welcome&apos;s you!
+                        Stefano Welcome&apos;s you!
                     </p>
                 </div>
             </AnimationContainer>
@@ -80,7 +80,7 @@ const Hero = () => {
 
                     <div className="text-balance relative z-20 mx-auto my-4 max-w-5xl text-center text-4xl lg:text-5xl font-bold">
                         <motion.h2 className="text-balance !leading-snug">
-                            {"Building Digital Solutions that Make a Difference"
+                            {"Transforming Ideas into Digital Success Stories"
                                 .split(" ")
                                 .map((word, index) => (
                                     <motion.span
@@ -111,7 +111,7 @@ const Hero = () => {
                 className="relative mt-6 flex flex-col items-center justify-center gap-y-6 max-w-3xl mx-auto text-center"
             >
                 <p className="text-base text-muted-foreground !leading-relaxed">
-                    Your one-stop solution for professional web development and design. <span className="inline-blocklg:inline-block">Whether you need a stunning website, an e-commerce platform, or a custom web application, I provide end-to-end solutions that help your business stand out in the digital landscape.</span>
+                Your all-in-one partner for professional web development, design, and digital growth. <span className="inline-blocklg:inline-block">Whether you need a visually stunning website, a seamless e-commerce platform, or a custom web application tailored to your needs, I deliver comprehensive solutions that elevate your brand and set your business apart in the digital landscape.</span>
                 </p>
             </AnimationContainer>
 
@@ -140,7 +140,7 @@ const Hero = () => {
                     className="flex flex-col items-center justify-center my-32"
                 >
                     <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 py-10 w-full lg:max-w-screen-md">
-                        {[25, 2, 8].map((value, index) => (
+                        {[50, 6, 50].map((value, index) => (
                             <AnimationContainer
                                 key={index}
                                 animation="scale"

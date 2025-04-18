@@ -29,8 +29,3 @@ A modern, minimalist portfolio website built with the latest web technologies. F
 - **Hygraph CMS**
 - **React Markdown**
 
-## ☕ Support
-
-If you like my work, consider buying me a coffee!
-
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/shreyas29)
