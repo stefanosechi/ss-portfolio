@@ -83,7 +83,7 @@ const Contact = () => {
                                 Email
                             </h6>
                             <p className="mt-2 text-base text-foreground/70">
-                                sihasaneshreyas@gmail.com
+                                stefanosechibusiness@gmail.com
                             </p>
                         </Button>
                     </Link>
@@ -93,7 +93,7 @@ const Contact = () => {
                                 Phone
                             </h6>
                             <p className="mt-2 text-base text-foreground/70">
-                                +91 932 235 6392
+                                +353 899795061
                             </p>
                         </Button>
                     </Link>

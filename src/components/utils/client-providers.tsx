@@ -1,15 +1,11 @@
 "use client";
 
-import dynamic from "next/dynamic";
-
-const BuymeCoffeeButton = dynamic(() => import("./buyme-coffee-button"), {
-    ssr: false,
-});
+import ScrollUpArrow from "../ui/scroll-up-arrow";
 
 export function ClientProviders() {
     return (
         <>
-            <BuymeCoffeeButton />
+            <ScrollUpArrow />
         </>
     );
-} 
+}

@@ -11,9 +11,4 @@ export const LINKS = [
         icon: BriefcaseIcon,
         href: "/projects",
     },
-    {
-        name: "Blog",
-        icon: NotebookIcon,
-        href: "/blog",
-    },
-];
+    ];

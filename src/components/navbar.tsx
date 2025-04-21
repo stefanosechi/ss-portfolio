@@ -15,30 +15,23 @@ const DATA = {
     navbar: LINKS,
     contact: {
         social: {
+            
             github: {
                 name: "GitHub",
-                url: "https://github.com/Shreyas-29",
+                url: "https://github.com/stefanosechi",
                 icon: Icons.github,
             },
             linkedin: {
                 name: "LinkedIn",
-                url: "https://linkedin.com/in/shreyas-sihasane-441b95238",
+                url: "https://www.linkedin.com/in/stefanos-743642243",
                 icon: Icons.linkedin,
-            },
-            youtube: {
-                name: "YouTube",
-                url: "https://www.youtube.com/channel/UCrqsZYcbNVO2F8FS-xIIiZg",
-                icon: Icons.youtube,
+            
             },
             resume: {
-                name: "Resume",
-                url: "/me.pdf",
+                name: "CV",
+                url: "/images/me.pdf",
                 icon: FileTextIcon,
-            },
-            coffe: {
-                name: "Buy me a coffee",
-                url: "https://www.buymeacoffee.com/shreyas29",
-                icon: Icons.coffeeInvert,
+            
             },
         },
     },

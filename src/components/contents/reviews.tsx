@@ -6,11 +6,13 @@ import { MagicCard } from "../ui/magic-card";
 import AnimationContainer from "../utils/animation-container";
 
 type ReviewProps = {
-    name: string;
-    text: string;
-    rating: number;
-    country: string;
+    name: Massimo;
+    text: eccezzionale;
+    rating: 5;
+    country: Italy;
 }
+
+
 
 const Reviews = async () => {
 
