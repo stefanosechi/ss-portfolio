@@ -9,6 +9,8 @@ import Icons from '../ui/icons';
 import { NumberTicker } from "../ui/number-ticker";
 import { AnimationContainer } from "../utils/animation-container";
 
+/* Removed FloatingIcons component as per user feedback */
+
 const Hero = () => {
 
     const ref = useRef(null);
@@ -29,7 +31,7 @@ const Hero = () => {
                         height={128}
                         priority={true}
                         quality={85}
-                        className="size-full object-cover object-top rounded-full grayscale group-hover:grayscale-0 group-hover:scale-110 group-hover:border-primary/80 transition-all duration-300"
+                        className="size-full object-cover object-top rounded-full transition-all duration-300 group-hover:scale-110 group-hover:border-primary/80"
                     />
                 </div>
             </AnimationContainer>
@@ -76,6 +78,7 @@ const Hero = () => {
                                 className="size-full object-cover float2-animation"
                             />
                         </div>
+                        {/* FloatingIcons component removed as per user request */}
                     </AnimationContainer>
 
                     <div className="text-balance relative z-20 mx-auto my-4 max-w-5xl text-center text-4xl lg:text-5xl font-bold">
@@ -169,7 +172,7 @@ const Hero = () => {
                 </AnimationContainer>
             )}
         </div>
-    )
+    );
 };
 
 export default Hero;

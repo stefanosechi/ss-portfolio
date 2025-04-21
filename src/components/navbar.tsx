@@ -2,7 +2,7 @@
 
 import { LINKS } from '@/constants/links';
 import { cn } from '@/lib/utils';
-import { FileTextIcon } from "lucide-react";
+import { FileTextIcon, PhoneIcon } from "lucide-react";
 import Link from 'next/link';
 import { buttonVariants } from "./ui/button";
 import { Dock, DockIcon } from "./ui/dock";
@@ -26,6 +26,11 @@ const DATA = {
                 url: "https://www.linkedin.com/in/stefanos-743642243",
                 icon: Icons.linkedin,
             
+            },
+            whatsapp: {
+                name: "WhatsApp",
+                url: "https://wa.me/+353899795061",
+                icon: PhoneIcon,
             },
             resume: {
                 name: "CV",

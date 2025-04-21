@@ -1,18 +1,19 @@
-"use server";
-
-import { getReviewsData } from "@/graphql";
-
-const getReviews = async () => {
-    try {
-        const reviews = await getReviewsData();
-        
-        const data = reviews?.map((item: any) => item.node);
-
-        return data;
-    } catch (error) {
-        console.log(error);
-        return [];
-    }
+export const getReviews = async () => {
+  // Example static reviews data with company field added
+  return [
+    {
+      name: "Renato",
+      text: "Hard Worker and dedicated professionalism.",
+      rating: 5,
+      country: "Italy",
+      company: "Luxnovo"
+    },
+    {
+      name: "Federica",
+      text: "Very satisfied for result, well done Stefano!",
+      rating: 5,
+      country: "Italy",
+      company: "Barefooture"
+    },
+  ];
 };
-
-export default getReviews;

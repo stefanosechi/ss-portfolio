@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    font-size: 20px;
+  }
   .dark {
     --main-background: 240, 6%, 3%;
     --background: 0 0% 100%;
@@ -37,6 +40,7 @@
   }
 
   :root {
+    font-size: 18px;
     --background: 240 10% 3.9%;
     --foreground: 0 0% 98%;
 
