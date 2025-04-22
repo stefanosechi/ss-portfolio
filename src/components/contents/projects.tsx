@@ -88,6 +88,7 @@ const Projects = () => {
           </Button>
         </Link>
       </AnimationContainer>
+      </AnimationContainer>
     </div>
   );
 };
