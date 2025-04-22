@@ -14,7 +14,9 @@ type ProjectProps = {
   title: string;
   description: string;
   url: string;
-  image: string;
+  image: { url: string }[];
+  github: string;
+  view: string;
 };
 
 const Projects = () => {
