@@ -23,7 +23,7 @@ const DATA = {
             },
             linkedin: {
                 name: "LinkedIn",
-                url: "https://www.linkedin.com/in/stefanos-743642243",
+                url: "https://www.linkedin.com/in/stefano-s-743642243",
                 icon: Icons.linkedin,
             
             },
