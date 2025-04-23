@@ -35,7 +35,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className="w-full relative pb-20 py-10 z-40">
+    <div className="w-full relative pb-20 py-10 z-40"> {/* Increased bottom padding to avoid navbar overlap */}
       <AnimationContainer
         animation="slide-up"
         delay={0.1}
@@ -87,7 +87,6 @@ const Projects = () => {
             <ArrowRightIcon className="size-4 ml-1.5" />
           </Button>
         </Link>
-      </AnimationContainer>
       </AnimationContainer>
     </div>
   );
