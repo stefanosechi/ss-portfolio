@@ -1,11 +1,11 @@
 export const SKILLS = [
     {
         title: 'Languages',
-        stack: ["HTML", "CSS", "JavaScript", "TypeScript", "Python"],
+        stack: ["HTML", "CSS", "JavaScript", "TypeScript", "Python","SQL"],
     },
     {
         title: "Frontend Frameworks",
-        stack: ["React", "Next.js", "React Native", "Vite"],
+        stack: ["Reactjs", "Next.js", "Vuejs","Liquid","Vite"],
     },
     {
         title: "Javascript Libraries",
@@ -13,22 +13,38 @@ export const SKILLS = [
     },
     {
         title: "CSS Styling & Motion Libraries",
-        stack: ["Tailwind CSS", "Framer Motion", "Styled Components", "Chakra UI", "Magic UI", "Aceternity UI", "Material UI", "Shadcn UI", "Next UI", "Bootstrap"],
+        stack: ["Tailwind CSS", "Framer Motion","Magic UI", "Material UI", "Shadcn UI", "Next UI", "Bootstrap"],
     },
     {
         title: "Backend Technologies",
-        stack: ["Node.js", "Express.js", "Mongoose", "Prisma", "GraphQL", "Flask"],
+        stack: ["Node.js","GraphQL"],
     },
     {
         title: "Databases",
-        stack: ["MongoDB", "Firebase", "Supabase", "NeonDB"],
+        stack: ["MongoDB", "MySQL",],
     },
     {
-        title: "Software & Tools",
-        stack: ["VS Code", "Cursor", "Git", "GitHub", "Eslint", "Figma", "VN", "Postman", "Notion"]
+        title: "Software & Development Tools",
+        stack: ["VS Code", "Cursor", "Git", "GitHub", "Eslint", "Notion","Python"]
     },
     {
-        title: "Currently Learning & Exploring",
-        stack: ["Socket.io", "Docker", "AWS", "React Testing Library", "Tailwind JIT", "Storybook"]
+        title: "CMS Website & Landing Page",
+        stack: ["WordPress (Elementor,Divi)","Webflow","Hubspot","ClickFunnels","Framer"]
+    },
+    {
+        title: "CMS E-commerce",
+        stack: ["Shopify", "Big Commerce", "Hubspot", "Woocommerce", "Prestashop", "Shopline"]
+    },
+    {
+        title: "Advertising",
+        stack: ["Meta Ads", "TikTok Ads", "Linkedin Ads"]
+    },
+    {
+        title: "Email Marketing",
+        stack: ["Sender", "Klaviyo","Active Campaign","Flow"]
+    },
+    {
+        title: "Data Analytics",
+        stack: ["Tableau", "PowerBi","Microsoft Clarity","Google Analytics","Google Tag Manager","Make","Zapier"]
     }
 ];
