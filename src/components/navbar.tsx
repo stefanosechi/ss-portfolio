@@ -30,7 +30,7 @@ const DATA = {
             
             upwork: {
                 name: "Upwork",
-                url: "https://www.upwork.com/freelancers/~0177ceff10612ce03b ",
+                url: "https://www.upwork.com/",
                 icon: null,
             },
             resume: {

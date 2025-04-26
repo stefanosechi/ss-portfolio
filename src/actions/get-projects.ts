@@ -25,5 +25,13 @@ export const getProjects = async () => {
       github: "https://github.com/stefanosechi/vetra-ai",
       view: "https://vetra-ai-orcin.vercel.app/",
     },
+    {
+      title: "Linkify",
+      description: "Linkify",
+      url: "https://linkify-project.vercel.app/",
+      image: [{ url: "/images/linkify.png" }],
+      github: "https://github.com/stefanosechi/linkify-project.git",
+      view: "https://linkify-project.vercel.app/",
+    },
   ];
 };
