@@ -9,8 +9,8 @@ const Head = () => {
 
     const meta = {
         title: `Stefano Sechi ${pathname === "/" ? "" : "• " + title.replace(/[-/]/g, " ")}`,
-        description: "I'm a software engineer and a web developer. I love to build things for the web and mobile devices. I love to learn new things and I'm always looking for new challenges.",
-        keywords: "Stefano Sechi, Web Developer, Software Engineer, Full Stack Developer",
+        description: "I'm a developer and entrepeneur. I create and develop solutions in the present but with an eye to the future.",
+        keywords: "Stefano Sechi, Web Developer, Software Engineer, Full Stack Developer, Italian Developer",
         type: "website",
     };
 

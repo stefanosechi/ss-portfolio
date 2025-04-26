@@ -61,12 +61,23 @@ const Hero = () => {
                         className="max-w-3xl mx-auto mt-6 relative overflow-visible"
                     >
                         <div className="hidden xl:block absolute top-0 -left-1/3 overflow-visible flex-none z-[1] w-20">
-                            <Image
+                            {/* Original hand icon img tag */}
+                            {/*
+                            <img
                                 src="/images/hand.svg"
                                 alt="hand"
                                 width={80}
                                 height={80}
                                 className="size-full object-cover float-animation"
+                            />
+                            */}
+                            {/* Modified hand icon img tag without size-full and object-cover classes */}
+                            <img
+                                src="/images/hand.svg"
+                                alt="hand"
+                                width={80}
+                                height={80}
+                                className="float-animation"
                             />
                         </div>
                         <div className="hidden xl:block absolute -top-14 -right-1/3 overflow-visible flex-none z-[1] w-36">

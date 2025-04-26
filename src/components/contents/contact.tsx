@@ -68,7 +68,9 @@ const Contact = () => {
                 animation="slide-up"
                 delay={0.1}
             >
-                <div className="w-full">
+                <div className="w-full flex flex-col items-center">
+                    <div className="flex gap-6 mb-4">
+                    </div>
                     <h2 className="text-2xl lg:text-3xl font-medium text-left w-full">
                         Get In Touch
                     </h2>
@@ -90,7 +92,7 @@ const Contact = () => {
                     <Link href="https://wa.link/c8re0h" className="flex-[0.5] w-full lg:w-auto">
                         <Button type='button' variant="outline" className="flex-col items-start w-full h-auto p-5 hover:scale-100">
                             <h6 className="text-base font-medium">
-                                Phone
+                                WhatsApp
                             </h6>
                             <p className="mt-2 text-base text-foreground/70">
                                 +353 899795061

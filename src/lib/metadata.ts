@@ -21,7 +21,7 @@ interface MetadataProps {
 // TODO: Make a logo like attio
 export const generateMetadata = ({
     title = `${process.env.NEXT_PUBLIC_APP_NAME}`,
-    description = "I'm a software engineer and entrepreneur.",
+    description = "I'm a developer and entrepreneur.",
     image = "/images/og-image.png",
     icons = [
         {

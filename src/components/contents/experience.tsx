@@ -44,7 +44,7 @@ reports of potentially abusive content.                    </TimeLineItem.Descri
                 <TimeLineItem>
                     <TimeLineItem.Title>
                         <span className="font-medium transition-all hover:text-white hover:underline hover:underline-offset-2">
-                        Trust & Safety Associate (contractor)
+                        Trust & Safety Associate
                         </span>
                         <br />
                         <span className="text-sm text-neutral-400">

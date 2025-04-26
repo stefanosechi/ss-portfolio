@@ -25,7 +25,7 @@ export const SKILLS = [
     },
     {
         title: "Software & Development Tools",
-        stack: ["VS Code", "Cursor", "Git", "GitHub", "Eslint", "Notion","Python"]
+        stack: ["VS Code", "Cursor", "Git", "GitHub", "Eslint", "Notion",]
     },
     {
         title: "CMS Website & Landing Page",

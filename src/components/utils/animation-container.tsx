@@ -50,14 +50,16 @@ export const AnimationContainer = ({
     delay = 0,
     duration = 0.5,
     once = true,
+    animateOnMount = false,
     ...props
-}: AnimationContainerProps) => {
+}: AnimationContainerProps & { animateOnMount?: boolean }) => {
     return (
         <motion.div
             className={cn(className)}
             initial={animations[animation].initial}
-            whileInView={animations[animation].animate}
-            viewport={{ once: false }}
+            {...(animateOnMount
+                ? { animate: animations[animation].animate }
+                : { whileInView: animations[animation].animate, viewport: { once } })}
             transition={{
                 delay,
                 duration,
