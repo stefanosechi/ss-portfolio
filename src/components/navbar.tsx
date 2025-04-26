@@ -30,7 +30,7 @@ const DATA = {
             
             upwork: {
                 name: "Upwork",
-                url: "https://www.upwork.com/",
+                url: "https://www.upwork.com/freelancers/~0177ceff10612ce03b",
                 icon: null,
             },
             resume: {
@@ -98,9 +98,9 @@ const Header = () => {
                                                         alt="Upwork"
                                                         className="size-4"
                                                     />
-                                                ) : (
+                                                ) : social.icon ? (
                                                     <social.icon className="size-4" />
-                                                )}
+                                                ) : null}
                                             </Link>
                                         </TooltipTrigger>
                                         <TooltipContent>
