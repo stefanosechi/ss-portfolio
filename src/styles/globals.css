@@ -40,7 +40,7 @@
   }
 
   :root {
-    font-size: 18px; /* Changed from 18px to 14px for smaller base font size */
+    font-size: 16px; /* Changed from 18px to 14px for smaller base font size */
     --background: 240 10% 3.9%;
     --foreground: 0 0% 98%;
 
