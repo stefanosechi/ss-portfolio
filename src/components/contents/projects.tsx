@@ -43,7 +43,7 @@ const Projects = () => {
       >
         <div className="w-full">
           <h2 className="text-2xl lg:text-3xl font-medium text-left w-full">
-            Featured Projects
+            Front End Projects
           </h2>
         </div>
       </AnimationContainer>

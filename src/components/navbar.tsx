@@ -30,13 +30,13 @@ const DATA = {
             
             upwork: {
                 name: "Upwork",
-                url: "https://www.upwork.com/freelancers/~0177ceff10612ce03b",
+                url: "https://www.upwork.com/freelancers/~0177ceff10612ce03b ",
                 icon: null,
             },
-            resume: {
-                name: "CV",
-                url: "/images/me.pdf",
-                icon: FileTextIcon,
+            fiverr: {
+                name: "Fiverr",
+                url: "https://www.fiverr.com/s_sechi?public_mode=true",
+                icon: null,
             
             },
         },
@@ -96,6 +96,12 @@ const Header = () => {
                                                     <img
                                                         src="/images/upwork.svg"
                                                         alt="Upwork"
+                                                        className="size-4"
+                                                    />
+                                                ) : social.name === "Fiverr" ? (
+                                                    <img
+                                                        src="/images/fiverr.png"
+                                                        alt="Fiverr"
                                                         className="size-4"
                                                     />
                                                 ) : social.icon ? (
