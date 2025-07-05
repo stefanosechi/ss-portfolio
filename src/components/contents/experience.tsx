@@ -29,7 +29,7 @@ const Experience = () => {
                         </span>
                         <br />
                         <span className="text-sm text-neutral-400">
-                            Covalen - Dublin
+                            Cpl - Dublin
                         </span>
                         {" "}•{" "}
                         <span className="text-neutral-200">

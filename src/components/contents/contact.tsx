@@ -89,13 +89,13 @@ const Contact = () => {
                             </p>
                         </Button>
                     </Link>
-                    <Link href="https://wa.link/c8re0h" className="flex-[0.5] w-full lg:w-auto">
+                    <Link href="https://wa.me/qr/CP6734ADNO6TB1" className="flex-[0.5] w-full lg:w-auto">
                         <Button type='button' variant="outline" className="flex-col items-start w-full h-auto p-5 hover:scale-100">
                             <h6 className="text-base font-medium">
                                 WhatsApp
                             </h6>
                             <p className="mt-2 text-base text-foreground/70">
-                                +353 899795061
+                                +353899795061
                             </p>
                         </Button>
                     </Link>
